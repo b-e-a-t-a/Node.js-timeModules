@@ -1,4 +1,5 @@
 var os = require('os');
+var Time = require('./Time');
 
 function getOSinfo() {
   var type = os.type();
@@ -24,5 +25,3 @@ function getOSinfo() {
 
 
 exports.print = getOSinfo;
-
-var Time = require('./Time');

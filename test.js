@@ -10,10 +10,10 @@ process.stdin.on('readable', function() {
         getOSinfo();
         break
       case '/version':
-        process.stdout.write(process.versions.node);
+        process.stdout.write(process.versions.node + '\n');
         break;
       case '/language':
-        process.stdout.write(process.env.OOBEUILang);
+        process.stdout.write(process.env.OOBEUILang + '\n');
         break;
       case '/exit':
         process.stdout.write('Quitting app!\n');
