@@ -13,9 +13,9 @@ function getTime() {
   var secInhour = (secInhours % 60);
 
   if (uptime < 3600) {
-    console.log(inMin + ' min. ' + (uptime % 60) + ' sec.');
+    return (inMin + ' min. ' + (uptime % 60) + ' sec.');
   } else {
-    console.log(inHours + ' h ' + minInHour + ' min ' + secInhour + ' sec.');
+    return (inHours + ' h ' + minInHour + ' min ' + secInhour + ' sec.');
   }
 };
 
